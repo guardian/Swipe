@@ -1,6 +1,9 @@
 # Swipe 1.0
 Swipe is a lightweight mobile slider with **1-to-1** touch movement. For more info read the [blog post](http://pr-i.me/AQL2).
 
+# Guardian fork
+We've forked this because we've added in some methods: `enable()` and `disable()`. These allow us to disable swiping while the animation is happening and enable it again once it's finished. The reason we needed this was because our use case (image galleries) needed their callback function to *always* fire when swiping completed, but we found that very fast swiping would cause this to fail and various bugs arose. This fix means that it should be impossible to swipe continuously without triggering the callback.
+
 ## Demo
 ### Visit here on a touch-enabled mobile device [swipejs.com](http://swipejs.com)
 
